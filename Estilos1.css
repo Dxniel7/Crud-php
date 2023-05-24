@@ -1,0 +1,163 @@
+body {
+    background-image: url('img/a.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.forms{
+    max-width: 80%;
+    margin: 0 auto;
+    border:1px solid skyblue;
+    padding: 50px;
+    border-radius:22px;
+    background-color: aliceblue;
+}
+
+.a {
+    border:1px solid skyblue;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+fieldset{
+    margin-bottom: 20px;
+    background-color: lightgreen;
+}
+h1{
+    border:1px solid skyblue;
+    margin: 0;
+    text-align: center;
+    color: crimson;
+    background-color: white;
+}
+
+h2{
+    border:1px solid skyblue;
+    margin: 0;
+    text-align: center;
+}
+.b {
+    border:1px solid skyblue;
+    padding: 7px;
+}
+
+label{
+    background-color: greenyellow;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.datosp label{
+    border:1px solid skyblue;
+    display: inline-table;
+    width: 20%;
+}
+
+.datosp input{
+    border:1px solid skyblue;
+    width: 79%;
+}
+.datosp{
+    border:1px solid skyblue;
+    padding:5px;
+    margin-bottom: 20px;
+}
+
+.c {
+    border:1px solid skyblue;
+    padding: 5px;
+}
+
+
+.cap label{
+    border:1px solid skyblue;
+    display: inline-table;
+    width: 20%;
+}
+.cap input{
+    border:1px solid skyblue;
+    width: 79%;
+}
+.cap {
+    border:1px solid skyblue;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 20px;
+}
+.curso{
+    padding: 5px;
+    grid-column:1/3;
+}
+.curso label{
+    display: inline-block;
+    width: 60%;
+    border:1px solid skyblue;
+}
+.dias{
+    padding: 5px;
+    grid-column: 3/7;
+}
+.h{
+    padding: 5px;
+}
+.check{
+    display: flex;
+    justify-content: space-around;
+}
+.dias label{
+    display: inline-block;
+    width: 98%;
+    border:1px solid skyblue;
+}
+.campo .h{
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+.pago label{
+    border:1px solid skyblue;
+    display: inline-flex;
+    width: 20%;
+}
+.pago input{
+    border:1px solid skyblue;
+    width: 20%;
+
+}
+.pago {
+    border:1px solid skyblue;
+    padding:5px;
+    margin-bottom: 20px;
+}
+.datosi label{
+    border:1px solid skyblue;
+    display: inline-table;
+    width: 20%;
+}
+
+.datosi input{
+    border:1px solid skyblue;
+    width: 79%;
+}
+.datosi {
+    border:1px solid skyblue;
+    padding:5px;
+    margin-bottom: 20px;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+}
+button {
+    width: 150px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}

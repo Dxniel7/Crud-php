@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.rtl.min.css" integrity="sha384-T5m5WERuXcjgzF8DAb7tRkByEZQGcpraRTinjpywg37AO96WoYN9+hrhDVoM6CaT" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="Estilos1.css">
+    <link rel="stylesheet" href="estilo.css">
+
+
+    <title>Formulario de inscripción</title>
+</head>
+<body style="font-family: 'Times New Roman', Times, serif;">
+    <div>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">FORMULARIO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="mostrar.php">LISTADO / ACCIONES</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        </header>
+    </div><br><br><br>
+
+    <div class="forms">
+        <form action="registro.php" method="POST">
+            <div class="a">
+                <h1>FORMULARIO DE INSCRIPCION</h1>
+              </div>
+            
+            <fieldset>
+                <h2 class="b">DATOS PERSONALES</h2>
+            </fieldset>
+            <div class="datosp">
+
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" placeholder="Haga clic aquí para escribir su nombre" name="txtNombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="ap">Apellido</label>
+                    <input id="ap" type="text" placeholder="Haga clic aquí para escribir su apellido" name="txtApellido" required>
+                </div>
+
+                <div class="campo">
+                    <label for="dir">Direccion</label>
+                    <input id="dir" type="text" placeholder="Haga clic aquí para escribir su direccion" name="txtDireccion" required>
+                </div>
+
+                <div class="campo">
+                    <label for="tel">Télefono</label>
+                    <input id="tel" type="text" placeholder="Haga clic aquí para escribir su número" pattern="[0-9]{10}" name="txtTelefono" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo Electrónico</label>
+                    <input id="email" type="email" placeholder="Haga clic aquí para escribir su correo" name="txtEmail" required>
+                </div>
+
+                <div class="campo">
+                    <label for="doc">Documento</label>
+                    <input id="doc" type="text" placeholder="Haga clic aquí para escribir el texto" name="txtDocumento">
+                </div>
+
+                <div class="campo">
+                    <label for="dt">Fecha de nacimiento</label>
+                    <input id="dt" type="date" name="txtFecha" required>
+                </div>
+            </div>
+
+            <fieldset>
+                <h2 class="c">CAPACITACION</h2>
+            </fieldset>
+            <div class="cap">
+                <div class="curso">
+                    <label for="curso">Curso</label>
+                    <select  id="curso" name="txtCurso">
+                        <option selected>Elija un curso</option>
+                        <option>Curso 1</option>
+                        <option>Curso 2</option>
+                        <option>Curso 3</option>
+                    </select>
+                    </select>
+                </div>
+
+                <div class="dia">
+                    <label>Días</label>
+                    <div class="check">
+                        <div class="campo-check">
+                            <input type="checkbox" id="day1" name="dias[]" value="Lunes">
+                             <label for="day1">Lunes</label>
+                        </div>
+                        <div class="campo-check">
+                            <input type="checkbox" id="day2" name="dias[]" value="Martes">
+                             <label for="day2">Martes</label>
+                        </div>
+                        <div class="campo-check">
+                            <input type="checkbox" id="day3" name="dias[]" value="Miercoles">
+                             <label for="day3">Miércoles</label>
+                        </div>
+                        <div class="campo-check">
+                            <input type="checkbox" id="day4" name="dias[]" value="Jueves">
+                             <label for="day4">Jueves</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h">
+                    <label for="h">Horario</label>
+                    <select  id="h" name="txtHorario">
+                        <option selected>Elija un horario</option>
+                        <option>Horario 1</option>
+                        <option>Horario 2</option>
+                        <option>Horario 3</option>
+                    </select>
+                </div>
+                
+                
+            </div>
+
+            <fieldset> 
+                    <h2 class="c">PLAN DE PAGO</h2> 
+            </fieldset>
+
+            <div class="pago">
+                <input type="radio" id="contado" name="pago" value="Contado">
+                <label for="contado">Contado</label>
+
+                <input type="radio" id="credito" name="pago" value="Crédito">
+                <label for="credito">Crédito</label>
+
+                <input type="radio" id="moneda" name="pago" value="Moneda">
+                <label for="moneda">Moneda</label>
+
+                <input type="radio" id="tarjeta" name="pago" value="Tarjeta">
+                <label for="tarjeta">Tarjeta</label>
+            </div>
+
+            <fieldset>
+                <h2 class="c">DATOS DE LA INSTITUCION</h2>
+            </fieldset>
+            <div class="datosi">
+                <div class="campo">
+                    <label for="numero">No. de contrato</label>
+                    <input id="numero" type="text" placeholder="Haga clic aquí para escribir texto" pattern="^[0-9]+$" name="txtContrato">
+                </div>
+
+                <div class="campo">
+                    <label for="persona">Persona que atendió</label>
+                    <input id="persona" type="text" placeholder="Haga clic aquí para escribir texto" name="txtAtendio">
+                </div>
+
+                <div class="campo">
+                    <label for="date-inscripcion">Fecha de inscripción</label>
+                    <input id="date-inscripcion" type="date" name="txtInscripcion" required>
+                </div>
+            </div>
+
+            <div class="boton">
+                <button align="center"; type="submit">Enviar</button>
+              </div>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+</body>
+</html>
